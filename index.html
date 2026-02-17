@@ -251,6 +251,39 @@
             50% { opacity: 0.8; }
         }
 
+        /* Remote access section */
+        .remote-section {
+            margin-top: 2.5rem;
+            padding: 1.8rem;
+            background: rgba(2,6,23,0.45);
+            border: 1px solid rgba(71,85,105,0.18);
+            border-radius: 12px;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            backdrop-filter: blur(8px);
+        }
+
+        .remote-icon {
+            font-size: 2.25rem;
+        }
+
+        .remote-section h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #e2e8f0;
+        }
+
+        .remote-text {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -296,23 +329,33 @@
     <div class="container">
         <div class="coming-soon-badge">🚀 Coming Soon</div>
         <div class="logo">🦅</div>
-        <h1>atomclaw</h1>
-        <p class="tagline">An intuitive, private, and proactive communication channel with your agent</p>
+        <h1>AtomClaw</h1>
+        <p class="tagline">An intuitive, private, and proactive communication channel with your OpenClaw agent</p>
         
         <div class="cta-buttons">
             <button class="btn btn-primary" onclick="alert('Check back soon!')">Coming soon</button>
         </div>
 
         <div class="features">
+             <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-title">Proactive Communication</div>
+                <div class="feature-text">Information should come to you. Your OpenClaw agent can proactively push updates that might interest you directly to your mobile device. Updates can be communicated silently in the background, or with push notifications</div>
+            </div>
             <div class="feature">
-                <div class="feature-icon">✨</div>
-                <div class="feature-title">Personal Context</div>
-                <div class="feature-text">Your agent learns and adapts to your unique preferences and needs</div>
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Dedicated Screen Space</div>
+                <div class="feature-text">With AtomClaw widgets, you can have screen space dedicated to your OpenClaw agent, giving your agent freedom to display information and interact with you.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">🔒</div>
                 <div class="feature-title">Secure & Private</div>
-                <div class="feature-text">End to End encrypted chat with your agent anywhere in the world</div>
+                <div class="feature-text">Communicate with your agent through End-to-End Encrypted chat. Your conversation with AI should be yours only.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">Communicate Anywhere</div>
+                <div class="feature-text">Leveraging AtomClaw's zero-knowledge and zero-log relay service, you can communicate with your OpenClaw agent from anywhere in the world, even if it sits behind a NAT</div>
             </div>
         </div>
     </div>
